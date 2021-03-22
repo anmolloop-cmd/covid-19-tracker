@@ -76,6 +76,7 @@ const App = () => {
       <div className="app__left">
         <div className="app__header">
           <h1>COVID-19 Tracker</h1>
+          <a href="https://anmolloop.netlify.app/" target="_blank" >Made By Anmol</a>
           <FormControl className="app__dropdown">
             <Select
               variant="outlined"
