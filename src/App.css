@@ -28,12 +28,6 @@ body {
   color: #fc3c3c;
   font-size: 2rem;
 }
-.app__header > a {
-  color: #0741ff;
-  font-size: 2rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-right:400px;
-}
 
 .app__stats {
   display: flex;
@@ -58,5 +52,23 @@ body {
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
+  }
+}
+.app__header > a {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  color: #0741ff;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right:400px;
+}
+@keyframes blink-animation {
+  to {
+    visibility:hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
 }
